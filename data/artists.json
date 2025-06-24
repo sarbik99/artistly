@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "name": "Arijit Singh",
+    "category": "Singer",
+    "price-range": "500000-600000",
+    "location": "Mumbai"
+  },
+  {
+    "id": 2,
+    "name": "Shakti Mohan",
+    "category": "Dancer",
+    "price-range": "25000-40000",
+    "location": "Delhi"
+  },
+  {
+    "id": 3,
+    "name": "DJ Chetas",
+    "category": "DJ",
+    "price-range": "20000-25000",
+    "location": "Mumbai"
+  },
+  {
+    "id": 4,
+    "name": "Chetan Bhagat",
+    "category": "Speaker",
+    "price-range": "25000-30000",
+    "location": "Bangalore"
+  },
+  {
+    "id": 5,
+    "name": "Neha Kakkar",
+    "category": "Singer",
+    "price-range": "300000-400000",
+    "location": "Delhi"
+  },
+  {
+    "id": 6,
+    "name": "Remo D'Souza",
+    "category": "Dancer",
+    "price-range": "60000-80000",
+    "location": "Mumbai"
+  },
+  {
+    "id": 7,
+    "name": "DJ NYK",
+    "category": "DJ",
+    "price-range": "15000-30000",
+    "location": "Delhi"
+  },
+  {
+    "id": 8,
+    "name": "Sandeep Maheshwari",
+    "category": "Speaker",
+    "price-range": "20000-35000",
+    "location": "Mumbai"
+  },
+  {
+    "id": 9,
+    "name": "Sonu Nigam",
+    "category": "Singer",
+    "price-range": "400000-500000",
+    "location": "Bangalore"
+  },
+  {
+    "id": 10,
+    "name": "Shakti Arora",
+    "category": "Speaker",
+    "price-range": "15000-20000",
+    "location": "Delhi"
+  },
+  {
+    "id": 11,
+    "name": "DJ Suketu",
+    "category": "DJ",
+    "price-range": "18000-22000",
+    "location": "Bangalore"
+  }
+]
