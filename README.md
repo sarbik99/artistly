@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Artistly Demo
 
-## Getting Started
+## Overview
+Artistly is a demo Next.js application for a Performing Artist Booking Platform. It allows event planners to browse artist profiles, filter by category, location, and fee range, and provides an onboarding form for artists to submit their details. A manager dashboard displays submissions in a table for review.
 
-First, run the development server:
+## Features
+- **Homepage**: Hero section, category cards, navigation.
+- **Artist Listing**: Grid layout, filters by category, location, and max fee.
+- **Onboarding Form**: Multi-section form (name, bio, categories, languages, fee, location, optional image), validation via React Hook Form + Yup, success toast.
+- **Manager Dashboard**: Table of submissions, status toggle action.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Tech Stack
+- Next.js (App Router, v13+)
+- React Functional Components & Hooks (useState, useEffect, useContext)
+- Tailwind CSS for styling
+- React Hook Form + Yup for form handling and validation
+- Framer Motion for subtle animations
+- react-hot-toast for success messages
+- Mock data via static JSON files
+
+## Folder Structure
+```
+/app
+  /artists        # Artist listing page
+  /onboard        # Artist onboarding page
+  /dashboard      # Manager dashboard page
+/components      # Reusable components (Header, ArtistCard, FilterPanel, Table, etc.)
+/data            # Static JSON data (artists.json)
+/public          # Public assets (images, logo)
+README.md        # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup & Running Locally
+1. **Clone the repo** (public):
+   ```bash
+   git clone https://github.com/sarbik99/artistly.git
+   cd artistly
+   ```
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Build for production**:
+   ```bash
+   npm run build
+   npm start
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
+- Deployed on Vercel. After pushing to GitHub, deployments occur automatically.
+- **Live URL**: https://artistly-gamma-two.vercel.app/
 
-## Learn More
+## Usage
+- **Homepage**: Explore categories and navigate.
+- **Artists Page**: Browse and filter artists by category, location, and max fee.
+- **Onboard Page**: Fill the form to submit artist details (logged in console or mocked API).
+- **Dashboard Page**: View submissions, toggle status between Pending/Contacted.
 
-To learn more about Next.js, take a look at the following resources:
+## Testing & Validation
+- Form validation ensures required fields before submission.
+- Filters update in real-time.
+- Responsive design tested on various screen sizes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
+- Clone the repo and create feature branches.
+- Code style: Tailwind for styling, React hooks, functional components.
+- Submit pull requests; ensure local `npm run build` passes without errors.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Notes for Reviewer
+- **Live Preview**: https://artistly-gamma-two.vercel.app/
+- **Repository**: https://github.com/sarbik99/artistly
+- No Vercel collaborator access needed; code is public and deployment is public.
+- For any questions, refer to README or code comments in components.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+This is a demo assignment repository. Use as reference for learning purposes.
